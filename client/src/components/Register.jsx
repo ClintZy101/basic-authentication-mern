@@ -38,7 +38,7 @@ export default function Register() {
     } else {
       try {
         setErrors({});
-        
+
         const response = await axios.post(`${LOCALHOST}/register`, formValue);
 
         console.log("Registration Success", response?.data);
@@ -54,7 +54,7 @@ export default function Register() {
     }
   };
 
-  console.log(errorMessage);
+  // console.log(errorMessage);
 
   return (
     <div>
